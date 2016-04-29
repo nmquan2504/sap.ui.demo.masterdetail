@@ -1,5 +1,5 @@
 {
-  "welcomeFile": "/webapp/test/testService.html",
+  "welcomeFile": "/webapp/index.html",
   "routes": [
     {
       "path": "/resources",
@@ -18,6 +18,19 @@
         "entryPath": "/test-resources"
       },
       "description": "SAPUI5 Test Resources"
+    }
+  ],
+  "authenticationMethod": "saml",
+  "securityConstraints": [
+    {
+        "permission": "Permission-1",
+        "description": "Permission-1's Description",
+        "protectedPaths": [
+            "/"
+        ],
+        "excludedPaths": [
+            
+        ]
     }
   ],
   "sendWelcomeFileRedirect": true,

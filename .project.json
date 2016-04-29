@@ -7,7 +7,7 @@
     "targetFolder": "dist",
     "sourceFolder": "webapp",
     "buildRequired": false,
-    "lastBuildDateTime": "Fri, 29 Apr 2016 17:42:34 GMT"
+    "lastBuildDateTime": "Fri, 29 Apr 2016 18:36:23 GMT"
   },
   "generation": [
     {
@@ -38,7 +38,7 @@
   "hcpdeploy": {
     "account": "p1940235714trial",
     "name": "sapuidemomasterdetail",
-    "lastVersionWeTriedToDeploy": "1.0.7"
+    "lastVersionWeTriedToDeploy": "1.0.11"
   },
   "mockpreview": {
     "mockUri": "/here/goes/your/serviceUrl/",
