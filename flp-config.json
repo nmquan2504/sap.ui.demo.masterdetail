@@ -1,0 +1,34 @@
+{
+    "application": {
+        "id": "",
+        "title": "sap.ui.demo.masterdetail",
+        "type": "SAP_UI5_Component",
+        "componentUrl": "/",
+        "appUrl": "#sapuidemomasterdetail-Display",
+        "navigationComponentName": "sap.ui.demo.masterdetail",
+        "intentSemanticObject": "sap.ui.demo.masterdetail",
+        "intentAction": "Display",
+        "html5ApplicationName": "sapuidemomasterdetail",
+        "HCPParentApplicationName": ""
+    },
+    "assignment": {
+        "groups": [
+            "30edf488-470c-440d-89e6-38d538febc1a-1461852781639"
+        ],
+        "contentPackages": [
+            "f6296c42-b2fe-4972-84a2-fd95bc37fef0-1461852767443"
+        ],
+        "categories": []
+    },
+    "tile": {
+        "type": "StaticTile",
+        "title": "Master Detail",
+        "subtitle": "Example",
+        "searchKeywords": "Master Detail,Example",
+        "displayIconUrl": "sap-icon://detail-view",
+        "displayInfoText": "",
+        "size": "1x1",
+        "serviceURL": "",
+        "refreshInterval": ""
+    }
+}

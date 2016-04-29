@@ -1,6 +1,5 @@
 {
 	"_version": "1.3.0",
-
 	"sap.app": {
 		"_version": "1.3.0",
 		"id": "sap.ui.demo.masterdetail",
@@ -8,22 +7,20 @@
 		"i18n": "i18n/i18n.properties",
 		"title": "{{appTitle}}",
 		"description": "{{appDescription}}",
-
 		"applicationVersion": {
 			"version": "1.0.0"
 		},
 		"dataSources": {
 			"mainService": {
-				"uri": "/here/goes/your/serviceUrl/",
+				"uri": "/sap/opu/odata/IWBEP/EPM_DEVELOPER_SCENARIO_SRV/",
 				"type": "OData",
 				"settings": {
 					"odataVersion": "2.0",
-					"localUri" : "localService/metadata.xml"
+					"localUri": "localService/metadata.xml"
 				}
 			}
 		}
 	},
-
 	"sap.ui": {
 		"_version": "1.3.0",
 		"technology": "UI5",
@@ -45,7 +42,6 @@
 			"sap_bluecrystal"
 		]
 	},
-
 	"sap.ui5": {
 		"_version": "1.2.0",
 		"rootView": {
@@ -54,7 +50,6 @@
 			"id": "app"
 		},
 		"autoPrefixId": true,
-
 		"dependencies": {
 			"minUI5Version": "1.34.0",
 			"libs": {
@@ -64,17 +59,15 @@
 				"sap.m": {
 					"minVersion": "1.34.0"
 				},
-				"sap.ui.layout" : {
+				"sap.ui.layout": {
 					"minVersion": "1.34.0"
 				}
 			}
 		},
-
 		"contentDensities": {
 			"compact": true,
 			"cozy": true
 		},
-
 		"models": {
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
@@ -82,7 +75,7 @@
 					"bundleName": "sap.ui.demo.masterdetail.i18n.i18n"
 				}
 			},
-			"" : {
+			"": {
 				"dataSource": "mainService",
 				"settings": {
 					"metadataUrlParams": {
@@ -91,7 +84,6 @@
 				}
 			}
 		},
-
 		"routing": {
 			"config": {
 				"routerClass": "sap.m.routing.Router",
@@ -100,24 +92,31 @@
 				"controlId": "idAppControl",
 				"controlAggregation": "detailPages",
 				"bypassed": {
-					"target": ["master", "notFound"]
+					"target": [
+						"master",
+						"notFound"
+					]
 				},
 				"async": true
 			},
-
 			"routes": [
 				{
 					"pattern": "",
 					"name": "master",
-					"target": ["object", "master"]
+					"target": [
+						"object",
+						"master"
+					]
 				},
 				{
 					"pattern": "Objects/{objectId}",
 					"name": "object",
-					"target": ["master", "object"]
+					"target": [
+						"master",
+						"object"
+					]
 				}
 			],
-
 			"targets": {
 				"master": {
 					"viewName": "Master",
@@ -144,5 +143,9 @@
 				}
 			}
 		}
+	},
+	"sap.platform.hcp": {
+		"uri": "webapp",
+		"_version": "1.1.0"
 	}
 }

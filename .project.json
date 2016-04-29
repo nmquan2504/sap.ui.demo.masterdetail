@@ -6,7 +6,8 @@
   "build": {
     "targetFolder": "dist",
     "sourceFolder": "webapp",
-    "buildRequired": true
+    "buildRequired": false,
+    "lastBuildDateTime": "Fri, 29 Apr 2016 15:06:47 GMT"
   },
   "generation": [
     {
@@ -33,5 +34,17 @@
     "notifyBeforePushLevel": "Error",
     "blockPush": false,
     "blockPushLevel": "Error"
+  },
+  "hcpdeploy": {
+    "account": "p1940235714trial",
+    "name": "sapuidemomasterdetail",
+    "lastVersionWeTriedToDeploy": "1.0.6"
+  },
+  "mockpreview": {
+    "mockUri": "/here/goes/your/serviceUrl/",
+    "metadataFilePath": "localService/metadata.xml",
+    "mockRequestsFilePath": "",
+    "loadJSONFiles": false,
+    "loadCustomRequests": false
   }
 }

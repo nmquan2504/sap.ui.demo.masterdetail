@@ -3,8 +3,9 @@ sap.ui.define([
 		"sap/ui/Device",
 		"sap/ui/demo/masterdetail/model/models",
 		"sap/ui/demo/masterdetail/controller/ListSelector",
-		"sap/ui/demo/masterdetail/controller/ErrorHandler"
-	], function (UIComponent, Device, models, ListSelector, ErrorHandler) {
+		"sap/ui/demo/masterdetail/controller/ErrorHandler",
+		"sap/ui/demo/masterdetail/localService/mockserver"
+	], function (UIComponent, Device, models, ListSelector, ErrorHandler, mockserver) {
 		"use strict";
 
 		return UIComponent.extend("sap.ui.demo.masterdetail.Component", {
@@ -20,6 +21,8 @@ sap.ui.define([
 			 * @override
 			 */
 			init : function () {
+			    mockserver.init();
+			    
 				this.oListSelector = new ListSelector();
 				this._oErrorHandler = new ErrorHandler(this);
 
